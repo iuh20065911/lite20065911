@@ -5,10 +5,10 @@ const { query } = require("./data.js");
 
 app.use(express.json());
 
-app.get("/api/books", async (req, res) => {
+app.get("/api20065911/books", async (req, res) => {
   console.info(`Getting all books`);
 
-  const books = await query("SELECT * FROM tblbook");
+  const books = await query("SELECT * FROM tblbookIUH20065911");
   res.json(books);
 });
 
